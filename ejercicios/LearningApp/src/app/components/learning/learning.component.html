@@ -1,0 +1,28 @@
+<div>
+    <div>
+        <h2>LISTA DE ESTUDIANTES</h2>
+    </div>
+    <div>
+        <h3>CURSO: {{malla.id}}. {{malla.name}}</h3>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <th>ID</th>
+                <th>CEDULA</th>
+                <th>NOMBRE</th>
+                <th>APELLIDO</th>
+            </thead>
+            <tbody>
+                @for (item of malla.students; track $index) {
+                    <tr>
+                        <td>{{item.id}}</td>
+                        <td>{{item.identification}}</td>
+                        <td>{{item.name}}</td>
+                        <td>{{item.surname}}</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
