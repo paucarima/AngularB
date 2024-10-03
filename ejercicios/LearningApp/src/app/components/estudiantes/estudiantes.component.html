@@ -1,0 +1,13 @@
+<table>
+    <thead>
+        <th>ID</th>
+        <th>CEDULA</th>
+        <th>NOMBRE</th>
+        <th>APELLIDO</th>
+    </thead>
+    <tbody>
+        @for (item of students; track $index) {
+            <tr estudiante-item [item]="item"></tr>
+        }
+    </tbody>
+</table>
