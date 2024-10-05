@@ -1,0 +1,7 @@
+D:\docker_code\aplicaciones\frontend\LearningApp>dir
+D:\docker_code\aplicaciones\frontend\LearningApp>docker build -t aprender:1 .
+D:\docker_code\aplicaciones\frontend\LearningApp>docker images
+D:\docker_code\aplicaciones\frontend\LearningApp>docker run -d --name aprender -p 4000:4200 aprender:1
+D:\docker_code\aplicaciones\frontend\LearningApp>docker ps
+CONTAINER ID   IMAGE        COMMAND                  CREATED          STATUS         PORTS                    NAMES
+fd7efc904bda   aprender:1   "docker-entrypoint.s…"   11 seconds ago   Up 9 seconds   0.0.0.0:4000->4200/tcp   aprender
